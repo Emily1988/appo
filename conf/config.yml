@@ -1,0 +1,37 @@
+appium:
+  port1: 4723
+  port2: 4724
+  port3: 4725
+ip:
+  ip1: 192.168.125.8 #ASUS
+  ip2: 192.168.0.132  #AAA-5G   XM
+  ip3: 192.168.3.184  #HUAWEI
+  ip4: 192.168.0.100  #AAA-5G   FM
+  ip5: 192.168.0.110 #ASUS_5G  ZB
+
+xm:
+  package:
+    xm_home: com.xming.xmlauncher3
+    xm_setting:  com.xming.xmsettings   #设置
+    xm_fileexplorer: com.xming.xmexplorer  #文件浏览
+  activity:
+        homeactivity: com.xming.activity.LauncherMain
+        main: .MainActivity   #home,设置
+        common: .CommonSettingsActivity #通用设置
+        localdick: .ExplorerSetActivity  #本地磁盘
+zb:
+  package:
+    zb_home: xmlauncher.appo.com.xmlauncher4
+    zb_setting:  com.xming.xmsettings   #设置
+    zb_fileexplorer: com.xming.xmexplorer  #文件浏览
+  activity:
+        homeactivity: .Activity.MainLauncher  #home
+        main: .MainActivity   #设置,文件浏览
+        localdick: .ExplorerSetActivity  #本地磁盘，外接移动设备
+fm:
+  package:
+    fm_home: com.mitv.tvhome
+    fm_media: com.xiaomi.mitv.mediaexplorer
+  activity:
+    homeactivity: .MainActivityUserMode
+    media_explorer: .NewScraperMainEntryActivity

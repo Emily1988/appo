@@ -1,0 +1,1898 @@
+2018-09-26 11:49:16,286 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8201
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8201
+
+2018-09-26 13:22:32,187 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-09-26 13:22:47,059 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-09-26 13:24:57,631 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-09-26 13:27:50,802 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-09-26 16:40:03,544 - tools.py - ERROR - 【包含非数字字符】b'2476\r',转化之后为2476
+2018-09-26 16:40:36,217 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-09-27 16:43:44,362 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-10-09 11:27:14,639 - remote.py - ERROR - HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002032A0BEA90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002032A0BEA90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002032A0BEA90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-10-09 11:49:55,091 - basecase.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Traceback (most recent call last):
+  File "D:\pycode\appo\case\basecase.py", line 55, in screenshots
+    if self.driver.save_screenshot(filepath):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+2018-10-09 13:42:26,128 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-09 13:43:51,134 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-09 13:45:28,782 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-09 14:10:42,171 - basecase.py - ERROR - HTTPConnectionPool(host='127.0.0.1', port=4727): Max retries exceeded with url: /wd/hub/session/1a839ddf-ced1-4620-a7b7-5d9fb63e8960/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017F9605CDD8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017F9605CDD8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\case\basecase.py", line 55, in screenshots
+    if self.driver.save_screenshot(filepath):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4727): Max retries exceeded with url: /wd/hub/session/1a839ddf-ced1-4620-a7b7-5d9fb63e8960/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017F9605CDD8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-10-09 17:16:57,566 - basecase.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Traceback (most recent call last):
+  File "D:\pycode\appo\case\basecase.py", line 55, in screenshots
+    if self.driver.save_screenshot(filepath):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+2018-10-09 17:23:17,092 - basecase.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Traceback (most recent call last):
+  File "D:\pycode\appo\case\basecase.py", line 55, in screenshots
+    if self.driver.save_screenshot(filepath):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1055, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+2018-10-10 15:31:18,447 - remote.py - ERROR - ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-10-10 16:13:00,435 - tools.py - ERROR - 【包含非数字字符】b'2696\r',转化之后为2696
+2018-10-11 09:26:01,572 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-11 09:27:31,819 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-11 09:27:59,056 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-11 09:28:54,788 - deviceinfo.py - ERROR - 设备offline,断开设备重新连接
+2018-10-11 10:40:04,489 - tools.py - ERROR - 【包含非数字字符】b'8184\r',转化之后为8184
+2018-10-11 13:50:20,688 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-11 13:57:45,810 - tools.py - ERROR - 【包含非数字字符】b'2692\r',转化之后为2692
+2018-10-11 14:13:43,781 - tools.py - ERROR - 【包含非数字字符】b'2692\r',转化之后为2692
+2018-10-11 15:09:16,702 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-11 16:50:25,838 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-11 17:22:05,822 - remote.py - ERROR - ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-10-11 18:54:17,596 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-11 19:05:13,324 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-12 15:16:40,186 - tools.py - ERROR - 【包含非数字字符】b'2992\r',转化之后为2992
+2018-10-12 15:24:23,953 - tools.py - ERROR - 【包含非数字字符】b'2992\r',转化之后为2992
+2018-10-12 17:53:27,671 - tools.py - ERROR - 【包含非数字字符】b'2992\r',转化之后为2992
+2018-10-12 18:04:43,729 - tools.py - ERROR - 【包含非数字字符】b'2992\r',转化之后为2992
+2018-10-13 16:25:54,153 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.97\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind listener: cannot bind to 127.0.0.1:8200: 以一种访问权限不允许的方式做了一个访问套接字的尝试。 (10013)'; Code: '1'
+
+2018-10-23 11:00:08,292 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:00:17,672 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:00:17,673 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:00:21,739 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:03:27,489 - tools.py - ERROR - 【包含非数字字符】b'7436\r',转化之后为7436
+2018-10-23 11:03:32,326 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:03:40,783 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:03:40,784 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:03:44,501 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:03:56,410 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:04:06,315 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:04:06,316 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:04:10,035 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:04:23,011 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:04:32,326 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:04:32,328 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:04:36,060 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:08:00,232 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:08:08,417 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:08:08,418 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:08:12,849 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:08:19,536 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:08:28,626 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:08:28,627 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:08:32,144 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:15:30,527 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:20:00,286 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:20:10,624 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:20:10,624 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:20:16,249 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:20:31,066 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 32, in checkdevcieconnect
+    shell=True)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:20:41,878 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 32, in checkdevcieconnect
+    shell=True)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:20:41,881 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:20:46,116 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:21:07,845 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 31, in checkdevcieconnect
+    deviceinfo = subprocess.check_output(cmd)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:21:18,075 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 31, in checkdevcieconnect
+    deviceinfo = subprocess.check_output(cmd)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:21:18,076 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:21:23,493 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:21:29,916 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 31, in checkdevcieconnect
+    deviceinfo = subprocess.check_output('adb devices')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:21:39,301 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 31, in checkdevcieconnect
+    deviceinfo = subprocess.check_output('adb devices')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:21:39,301 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:21:43,846 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:22:14,626 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 32, in checkdevcieconnect
+    devicename = subprocess.check_output('adb devices').decode('utf-8').split('\r\n')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:22:24,102 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 32, in checkdevcieconnect
+    devicename = subprocess.check_output('adb devices').decode('utf-8').split('\r\n')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:22:24,103 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:22:28,582 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 11:29:54,834 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:30:03,101 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 11:30:03,102 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 11:30:06,625 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 13:55:10,913 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 13:55:20,198 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 13:55:20,198 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 13:55:23,941 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 13:57:13,016 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 13:57:22,402 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 13:57:22,402 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 13:57:26,381 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:01:32,580 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:01:41,340 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:01:41,341 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:01:45,196 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:03:31,036 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:03:40,322 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:03:40,324 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:03:43,987 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:05:58,750 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:06:07,877 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:06:07,878 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:06:11,655 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:07:18,218 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:07:27,599 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:07:27,600 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:07:31,000 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:09:45,950 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:09:55,263 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:09:55,264 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:09:59,540 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:12:22,981 - tools.py - ERROR - 【包含非数字字符】b'5900\r',转化之后为5900
+2018-10-23 14:12:27,670 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:12:37,561 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-10-23 14:12:37,562 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 14:12:41,195 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 14:18:56,954 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-23 14:34:51,303 - remote.py - ERROR - HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018343C2EA58>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000018343C2EA58>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018343C2EA58>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-10-23 15:41:50,712 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 15:43:45,550 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 15:46:13,010 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 15:49:00,715 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 15:59:14,612 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 16:00:59,866 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 16:02:22,112 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 16:02:27,963 - tools.py - ERROR - 【包含非数字字符】b'5320\r',转化之后为5320
+2018-10-23 16:03:00,474 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-10-23 16:03:33,981 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8211
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8211
+
+2018-10-23 16:08:21,663 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:09:29,209 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:14:00,921 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:17:41,348 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:18:24,575 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:28:15,990 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:32:02,968 - tools.py - ERROR - 【包含非数字字符】b'7300\r',转化之后为7300
+2018-10-23 16:42:35,191 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 16:51:02,770 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:01:17,018 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:01:43,903 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:04:21,841 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:05:34,138 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:07:44,739 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:10:49,624 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:12:32,810 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 17:15:30,116 - tools.py - ERROR - 【包含非数字字符】b'6764\r',转化之后为6764
+2018-10-23 18:27:14,294 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 18:27:14,462 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-23 18:27:43,735 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-23 18:27:43,883 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-23 18:27:52,553 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 18:27:52,806 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error finding if app is installed. Original error: Could not find a connected Android device.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error finding if app is installed. Original error: Could not find a connected Android device.
+
+2018-10-23 18:28:23,734 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-10-23 18:33:36,571 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-23 18:33:50,264 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-23 18:36:35,838 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-23 18:41:16,296 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-23 18:44:58,940 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-23 18:59:41,386 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-23 19:46:10,506 - tools.py - ERROR - 【包含非数字字符】b'4444\r',转化之后为4444
+2018-10-24 15:01:36,244 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-24 15:01:36,393 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-24 15:02:04,311 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-24 15:02:04,439 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-24 15:05:07,743 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.83\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind to socket
+error: cannot bind to socket'; Code: '1'
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android\\android_sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.125.83\:5555 forward tcp\:8200 tcp\:6790' exited with code 1'; Stderr: 'error: cannot bind to socket
+error: cannot bind to socket'; Code: '1'
+
+2018-10-24 16:03:19,391 - remote.py - ERROR - ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-10-25 09:01:20,551 - deviceinfo.py - ERROR - Command 'adb shell cat /system/build.prop' returned non-zero exit status 4294967295.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\deviceinfo.py", line 13, in getandroidversion
+    sysinfo = subprocess.check_output('adb shell cat /system/build.prop').decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb shell cat /system/build.prop' returned non-zero exit status 4294967295.
+2018-10-25 10:23:14,431 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-10-25 10:23:50,442 - remote.py - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8207
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 22, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8207
+
+2018-10-31 14:01:20,000 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-31 14:01:48,045 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-31 14:01:48,775 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-31 14:02:16,991 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-31 14:02:17,908 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-31 14:02:46,677 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-31 14:02:47,314 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-31 14:03:15,935 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-31 14:03:16,670 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-10-31 14:03:45,173 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-10-31 14:03:46,183 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-08 10:39:15,693 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-11-08 10:40:41,991 - tools.py - ERROR - 【包含非数字字符】b'4672\r',转化之后为4672
+2018-11-08 10:41:05,068 - tools.py - ERROR - 【包含非数字字符】b'4672\r',转化之后为4672
+2018-11-08 10:41:09,779 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-08 10:41:10,532 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-08 10:41:34,966 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-08 10:41:36,344 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-08 10:41:36,684 - tools.py - ERROR - 【包含非数字字符】b'4672\r',转化之后为4672
+2018-11-08 10:41:44,961 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-11-08 10:43:45,567 - tools.py - ERROR - 【包含非数字字符】b'4672\r',转化之后为4672
+2018-11-13 14:07:39,783 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-13 14:12:29,129 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-13 14:12:29,321 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-13 14:12:52,674 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-13 14:12:52,863 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-13 14:13:43,083 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-13 14:13:43,271 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-13 14:20:58,691 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-13 14:21:32,519 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 11:29:35,856 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 11:30:40,349 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:47:25,229 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:47:29,962 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 14:48:12,624 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:48:35,175 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-15 14:48:35,348 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 14:48:59,074 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:49:19,958 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:50:41,645 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:54:02,591 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 14:56:09,521 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 16:13:45,241 - tools.py - ERROR - 【包含非数字字符】b'3200\r',转化之后为3200
+2018-11-15 16:13:49,932 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-15 16:13:50,028 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 16:16:22,515 - remote.py - ERROR - HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000220E2BAB208>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 79, in create_connection
+    raise err
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000220E2BAB208>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 21, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4727): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000220E2BAB208>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-11-15 16:51:12,705 - remote.py - ERROR - ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\myremote.py", line 21, in remote
+    driver = webdriver.Remote(url, desired_caps)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 97, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\appium\webdriver\webdriver.py", line 136, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 376, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\poolmanager.py", line 322, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-11-15 17:16:32,865 - tools.py - ERROR - 【包含非数字字符】b'7040\r',转化之后为7040
+2018-11-15 17:21:15,453 - tools.py - ERROR - 【包含非数字字符】b'8144\r',转化之后为8144
+2018-11-15 17:24:28,631 - tools.py - ERROR - 【包含非数字字符】b'8144\r',转化之后为8144
+2018-11-15 17:25:02,777 - tools.py - ERROR - 【包含非数字字符】b'8144\r',转化之后为8144
+2018-11-15 17:27:45,624 - tools.py - ERROR - 【包含非数字字符】b'8144\r',转化之后为8144
+2018-11-15 17:51:39,690 - connect.py - ERROR - Command 'adb devices' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\connect.py", line 33, in checkdevcieconnect
+    startupinfo=gl.globalStartupInfo)
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices' returned non-zero exit status 1.
+2018-11-15 17:51:39,699 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-15 17:51:45,041 - mydriver.py - ERROR - Command 'adb devices -l' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 26, in getdevicename
+    deviceinfo = subprocess.check_output(shell_getdevice_cmd).decode('utf-8')
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 336, in check_output
+    **kwargs).stdout
+  File "C:\Users\appo\AppData\Local\Programs\Python\Python36\lib\subprocess.py", line 418, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'adb devices -l' returned non-zero exit status 1.
+2018-11-15 17:52:15,339 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
+2018-11-15 18:07:46,682 - connect.py - ERROR - adb connect命令执行失败,设备连接失败,请检查网络频段
+2018-11-15 18:07:46,801 - mydriver.py - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\pycode\appo\common\mydriver.py", line 11, in driver
+    driver = myremote.remote(selenium_grid_url, caps)
+  File "D:\pycode\appo\common\myremote.py", line 13, in remote
+    "deviceName":deviceinfo.getdevicename(),
+  File "D:\pycode\appo\common\deviceinfo.py", line 31, in getdevicename
+    devicename = re.findall(r'device product:(.*)\smodel', deviceinfo, re.S)[0]
+IndexError: list index out of range
